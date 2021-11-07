@@ -1,38 +1,152 @@
-.App {
+/* Background Color */
+body {
+  background: #007bff;
+  background: linear-gradient(to right, #0062e6, #33aeff);
+}
+
+/* Individual box */
+.indBox {
+  background-color: white;
+  border-radius: 12px;
+  margin: 3rem auto;
+}
+
+/* Text Alignment for plan & price */
+.planname,
+.planamount {
   text-align: center;
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Plan Name */
+.planname {
+  padding-top: 15px;
+  padding-bottom: 2px;
+  color: gray;
+  font-size: 10px;
+  font-weight: bolder;
+  letter-spacing: 1px;
+  text-indent: -1rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* Plan amount */
+.amount {
+  font-size: 25px;
+  font-weight: 500;
+}
+
+/* Horizontal line */
+hr {
+  width: 11rem;
+  border: -1px ridge grey;
+  margin: 4px auto;
+}
+
+/* Ordered lists */
+ol {
+  list-style-type: none;
+  padding-left: 10px;
+  line-height: 30px;
+  font-size: 0.8rem;
+}
+
+/* Icons  */
+.fa-times {
+  margin-left: 5px;
+}
+
+/* list points */
+li > span {
+  margin-left: 8px;
+}
+
+/* NonBenefits saturation */
+.nobenefits {
+  opacity: 0.8;
+}
+
+/* Buttons */
+button {
+  width: 90%;
+  height: 2rem;
+  margin: 5px 9px;
+  border-radius: 20px !important;
+  background-color: rgb(123, 182, 209) !important;
+  border-style: none !important;
+  font-size: 10px !important;
+  font-weight: 550 !important;
+}
+
+/* Hovering part */
+button:hover {
+  background-color: #0062e6 !important;
+}
+.indBox:hover .btn {
+  background-color: #0062e6 !important;
+}
+.indBox:hover {
+  transform: translateY(-5px);
+  transition: all 0.2s ease;
+}
+
+/* Responsive Web page - Desktop(800px) */
+@media (min-width: 800px) {
+  .Boxes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .indBox {
+    margin: 25px auto;
+    height: fit-content;
+    width: 13rem;
+  }
+  button {
+    margin-bottom: 15px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+/* Responsive Web page - Tab(800px) */
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width: 800px) {
+  .Boxes {
+    display: grid;
+    grid-template-columns: 1fr;
   }
-  to {
-    transform: rotate(360deg);
+  .indBox {
+    margin: 20px auto;
+    width: 30rem;
+  }
+  hr {
+    width: 29rem;
+  }
+  ol {
+    padding-left: 20px;
+  }
+  .fa-times {
+    margin-left: 5px;
+  }
+  .indBox:hover {
+    transform: none;
+  }
+  button {
+    width: 95%;
+    margin: 10px 12px;
+  }
+}
+
+/*Responsive Web page - Phone(380px) */
+@media (max-width: 400px) {
+  .indBox {
+    width: 13rem;
+    height: 24.5rem;
+  }
+  hr {
+    width: 11rem;
+  }
+  button {
+    margin: 10px 5px;
+    width: 95%;
   }
 }
