@@ -8,7 +8,7 @@ body {
 .indBox {
   background-color: white;
   border-radius: 12px;
-  margin: 3rem auto;
+  /* margin: 3rem auto; */
 }
 
 /* Text Alignment for plan & price */
@@ -23,7 +23,7 @@ body {
   padding-top: 15px;
   padding-bottom: 2px;
   color: gray;
-  font-size: 10px;
+  font-size: 13px;
   font-weight: bolder;
   letter-spacing: 1px;
   text-indent: -1rem;
@@ -31,7 +31,7 @@ body {
 
 /* Plan amount */
 .amount {
-  font-size: 25px;
+  font-size:30px;
   font-weight: 500;
 }
 
@@ -94,16 +94,23 @@ button:hover {
   .Boxes {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    width: 80%;
+    width:58%;
     margin: 0 auto;
+    column-gap:1.5rem;
   }
   .indBox {
-    margin: 25px auto;
+    margin: 8vh auto;
     height: fit-content;
-    width: 13rem;
+    width: 15rem;
   }
   button {
     margin-bottom: 15px;
+    font-size:0.85rem !important;
+  }
+  ol
+  {
+    line-height:45px;
+    font-size:0.95rem;
   }
 }
 
@@ -123,6 +130,7 @@ button:hover {
   }
   ol {
     padding-left: 20px;
+    font-size:0.85rem;
   }
   .fa-times {
     margin-left: 5px;
@@ -140,7 +148,7 @@ button:hover {
 @media (max-width: 400px) {
   .indBox {
     width: 13rem;
-    height: 24.5rem;
+    height:fit-content;
   }
   hr {
     width: 11rem;
@@ -148,5 +156,8 @@ button:hover {
   button {
     margin: 10px 5px;
     width: 95%;
+  }
+  ol{
+    font-size:0.8rem;
   }
 }
