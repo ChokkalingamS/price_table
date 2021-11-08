@@ -95,7 +95,7 @@ button:hover {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     width:58%;
-    margin: 0 auto;
+    margin: 0 20%;
     column-gap:1.5rem;
   }
   .indBox {
